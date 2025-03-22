@@ -8,6 +8,13 @@
 
 int main(void)
 {
-	write(1, "0123456789\n", 11);
+	int n = 48;
+
+	while (n < 58)
+	{
+		putchar(n);
+		n++;
+	}
+	putchar(10);
 	return (0);
 }
