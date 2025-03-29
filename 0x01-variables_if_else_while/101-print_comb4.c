@@ -1,14 +1,10 @@
 #include <stdio.h>
-#include <unistd.h>
+
 /**
 * main - prints all possible different combinations of three digits.
 *
 * Return: 0 Always(Succeses)
 */
-void _putchar(char c)
-{
-	write(1, &c, 1);
-}
 int main(void)
 {
 	int	m = 48;
@@ -23,13 +19,13 @@ int main(void)
 			{
 				if (m < n && n < o)
 				{
-					_putchar(m);
-					_putchar(n);
-					_putchar(o);
+					putchar(m);
+					putchar(n);
+					putchar(o);
 					if (m != 55 || n != 56 || o != 57)
 					{
-						_putchar(',');
-						_putchar(' ');
+						putchar(',');
+						putchar(' ');
 					}
 				}
 				o++;
@@ -40,6 +36,6 @@ int main(void)
 		n = 49;
 		m++;
 	}
-	_putchar(10);
+	putchar(10);
 	return (0);
 }
