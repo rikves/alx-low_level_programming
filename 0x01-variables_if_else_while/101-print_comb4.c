@@ -13,20 +13,20 @@ int main(void)
 
 	while (m <= 55)
 	{
-		n = m+1;
+		n = m + 1;
 		while (n <= 56)
 		{
-			o = n+1;
+			o = n + 1;
 			while (o <= 57)
 			{
-					putchar(m);
-					putchar(n);
-					putchar(o);
-					if (m != 55)
-					{
-						putchar(',');
-						putchar(' ');
-					}
+				putchar(m);
+				putchar(n);
+				putchar(o);
+				if (m != 55)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 				o++;
 			}
 			n++;
