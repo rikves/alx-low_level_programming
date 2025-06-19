@@ -14,23 +14,23 @@ void times_table(void)
 		m  = 0;
 		while (m < 10)
 		{
+			if (m != 0)
+			{
+				_putchar(',');
+				if (res < 10)
+					_putchar(' '), _putchar(' ');
+				else
+					_putchar(' ');
+			}
 			res = n * m;
 			if (res >= 10)
 			{
-				_putchar(32);
 				_putchar(res / 10 + 48);
 				_putchar(res % 10 + 48);
 			}
 			else
 			{
-			
 				_putchar(res + 48);
-				_putchar(32);
-				_putchar(32);
-			}
-			if (m != 9)
-			{
-				_putchar(',');
 			}
 			m++;
 		}
