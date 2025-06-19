@@ -23,14 +23,13 @@ void times_table(void)
 			else
 			{
 				_putchar(res + 48);
-				_putchar(32);
-
 			}
 			if (m != 9)
 			{
-				_putchar(32);
 				_putchar(',');
-			}	
+				_putchar(32);
+				_putchar(32);
+			}
 			m++;
 		}
 		_putchar(10);
