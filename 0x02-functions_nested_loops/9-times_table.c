@@ -20,11 +20,10 @@ void times_table(void)
 				_putchar(' ');
 			}
 			res = n * m;
-			// Right-align numbers:
 			if (res < 10)
 			{
 				if (m != 0)
-					_putchar(' '); // pad with space before single-digit numbers (except first col)
+					_putchar(' ');
 				_putchar(res + '0');
 			}
 			else
