@@ -8,18 +8,15 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list ap;
-	unsigned int param, sum = 0;
+	unsigned int sum, i = 0;
+	va_list args;
 
-	/* initialize the argument list from the start */
-	va_start(ap, n);
-
-	/* iterate through all parameter values*/
-	for (param = 0; param < n; param++)
-		/* get the next parameter value and add it to sum*/
-		sum += va_arg(ap, int);
-	/*Clean up*/
-	va_end(ap);
-
+	va_start(args, n);
+	while (i < n)
+	{
+		sum += va_arg(args, int);
+		i++;
+	}
+	va_end(args);
 	return (sum);
 }
